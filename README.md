@@ -1,4 +1,4 @@
-# Login Form 0.2:
+# Fire Code Validator GUI:
 
 This Python code creates a visually appealing and secure login form using Tkinter and ttkbootstrap. It incorporates robust validation features for both email and password fields, ensuring user data integrity.
 
