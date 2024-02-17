@@ -1,32 +1,30 @@
-# Fire Code Validator GUI:
+Tkinter Login Application:
 
-This Python code creates a visually appealing and secure login form using Tkinter and ttkbootstrap. It incorporates robust validation features for both email and password fields, ensuring user data integrity.
+This Python script implements a simple login application using Tkinter for the GUI and ttkbootstrap for styling. It validates user input for email and password according to specified criteria and provides feedback on validity. Upon successful validation, it prints the entered username and password and displays a welcome message.
+Dependencies
 
-Key features:
+    Python 3.x
+    Tkinter
+    ttkbootstrap
 
-    Visually appealing interface: Designed with the "solar" theme from ttkbootstrap for a modern and engaging look.
-    
-    Email validation: Verifies email address format and checks domain existence for accurate input.
-    
-    Strong password enforcement: Requires passwords to meet minimum length, complexity, and uniqueness criteria to enhance security.
-    
-    Clear feedback: Provides informative messages to the user regarding input validity, guiding them towards successful login.
-    
-    User-friendly layout: Presents input fields and feedback in a clear and intuitive manner.
-    
-    Potential for expansion: Provides a solid foundation for further development, such as integrating with databases or other functionalities.
+Description
 
-Code structure:
+The script creates a Tkinter window styled with ttkbootstrap, titled "Window-6X" and with dimensions 600x600 pixels. It includes the following components:
 
-    Import necessary modules: tkinter, ttkbootstrap, re, and socket.
-    
-    Define validation functions: is_valid_email and is_valid_password to check email and password format, respectively.
-    
-    Create the main window: Using ttkbootstrap's Window class for a stylish interface.
-    
-    Add title and input fields: Label for the title, frames for input, and entries for username and password.
-    
-    Implement submit button: Triggers the send function when clicked.
-    
-    Handle validation and feedback: Inside send, validate email and password, provide feedback through a label, and print valid credentials if successful.
-    Run the main loop: Keeps the window open and responsive to user interactions.
+    Label: Displays the title "Fire Code" with a custom font.
+    Entry: Two entry fields for username and password input.
+    Button: Submit button triggering the send() function for validation.
+    Label: Displays output messages regarding email and password validity.
+
+The send() function validates the entered email and password according to specific criteria:
+
+    Email validation checks for proper formatting and domain existence.
+    Password validation ensures it meets length and complexity requirements, avoiding common patterns like "password" or sequential numbers.
+    If both email and password pass validation, it prints the entered username and password and displays a "Welcome Back" message. Otherwise, it provides feedback on the invalid input.
+
+Instructions
+
+    Launch the application by running the script.
+    Enter a username and password.
+    Click the "Submit" button to validate the input.
+    Review the output message for validation feedback.
